@@ -4,6 +4,13 @@ Course files for reference can be found on GitHub from [iamshaunjp](https://gith
 
 ---
 
+## Layout
+This repo is split into two separate React applications
+1. **contextapp** for React Context API work
+2. **hooksapp** for React Hooks
+
+---
+
 ## Notes
 ### 1. Introduction
 - [React Context API](https://reactjs.org/docs/context.html) allows for cleaner and easier sharing of state between components
@@ -18,3 +25,11 @@ Course files for reference can be found on GitHub from [iamshaunjp](https://gith
     - A common example is sharing the selected theme or preferred language for several components
 - A **Context** with the state data is created in it's own file to then be shared with the component tree
     - this is done via a **Context Provider** which is simple a React tag which wraps whatever components will need to make use of it, but need not be used by all components
+### 9. Intro to Hooks
+- Hooks are essentially just special functions
+- They allow you to do things in functional components that you would usually only be able to do in class components
+    - for example, using state
+- There are several predefined React Hooks that do different things
+    - `useState()`: allows us to use state in functional components
+    - `useEffect()`: allows us to run code whenever a component renders (or re-renders)
+    - `useContext()`: allows us to consume context in a functional component
