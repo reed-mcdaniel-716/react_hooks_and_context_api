@@ -1,5 +1,6 @@
 import React, { Component , createContext} from 'react';
 
+// This is an example of a Context created with a class component
 // a secondary Context for authentication
 // makes sense to have different Contexts for global state that will be used for different reasons or different sets of components
 export const AuthContext = createContext();

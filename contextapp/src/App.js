@@ -5,6 +5,7 @@ import Booklist from './components/Booklist.js';
 import ThemeToggle from './components/ThemeToggle.js';
 import ThemeContextProvider from './contexts/ThemeContext.js';
 import AuthContextProvider from './contexts/AuthContext.js';
+import BookContextProvider from './contexts/BookContext.js';
 
 function App() {
     // will be using Context API to hold data about the app's theme
@@ -17,7 +18,9 @@ function App() {
             <ThemeContextProvider>
                 <AuthContextProvider>
                     <Navbar/>
-                    <Booklist/>
+                    <BookContextProvider>
+                        <Booklist/>
+                    </BookContextProvider>
                     <ThemeToggle />
                 </AuthContextProvider>
             </ThemeContextProvider>

@@ -1,5 +1,6 @@
 import React , { createContext } from 'react';
 
+// This is an example of a Context created with a class component
 // context creation
 export const ThemeContext = createContext();
 
