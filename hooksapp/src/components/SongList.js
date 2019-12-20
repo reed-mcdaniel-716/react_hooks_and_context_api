@@ -1,4 +1,4 @@
-import React , { useState } from 'react';
+import React , { useState, useEffect } from 'react';
 import uuid from 'uuid/v1';
 import NewSongForm from './NewSongForm.js';
 
@@ -15,6 +15,21 @@ const SongList = () => {
         // uuid function creates a new unique id everytime it is called
         setSongs([...songs, {title: title, id: uuid()}]);
     }
+
+    // more state
+    const [age, setAge] = useState(20);
+
+    // useEfect is a function that takes a callback function as a parameter
+    // the callback function is called whenever the component renders or re-renders
+    // i.e. whenever the data in the component changes and on the initial render
+    // the second parameter is an array of variable we want to watch s.t. the callback is called only when those variables change
+    useEffect(()=>{
+        console.log('useEffect hook ran', songs);
+    }, [songs]);
+
+    useEffect(()=>{
+        console.log('useEffect hook ran', age);
+    }, [age]);
     return (
         <div className='song-list'>
             <ul>
@@ -23,6 +38,7 @@ const SongList = () => {
                 })}
             </ul>
             <NewSongForm addSong={addSong}/>
+            <button onClick={() => setAge(age+1)}> Add 1 to age: {age} </button>
         </div>
     );
 };

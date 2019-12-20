@@ -9,6 +9,7 @@ const NewSongForm = ({ addSong }) => {
         e.preventDefault();
         console.log(title);
         addSong(title);
+        setTitle('');
     }
     return (
         <form onSubmit={handleSubmit}>

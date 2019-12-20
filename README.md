@@ -31,5 +31,8 @@ This repo is split into two separate React applications
     - for example, using state
 - There are several predefined React Hooks that do different things
     - `useState()`: allows us to use state in functional components
-    - `useEffect()`: allows us to run code whenever a component renders (or re-renders)
+    - `useEffect()`: allows us to run code whenever a component renders (or re-renders) similar to a lifecycle method in a class component
     - `useContext()`: allows us to consume context in a functional component
+- **Hook Rules**:
+    - **Only Call Hooks at the Top Level: Don’t call Hooks inside loops, conditions, or nested functions.**
+    - **Only Call Hooks from React Functions: Don’t call Hooks from regular JavaScript functions.**
