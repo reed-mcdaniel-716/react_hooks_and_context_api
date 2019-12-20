@@ -5,10 +5,10 @@ Course files for reference can be found on GitHub from [iamshaunjp](https://gith
 ---
 
 ## Layout
-This repo is split into two separate React applications
-1. **contextapp** for React Context API work
+This repo is split into three separate React applications
+1. **contextapp** for React Context API work both with and without Hooks
 2. **hooksapp** for React Hooks
-
+3. **booklist** for a more complex application using React Context API and Hooks
 ---
 
 ## Notes
