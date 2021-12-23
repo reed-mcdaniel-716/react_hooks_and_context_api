@@ -19,7 +19,7 @@ const SongList = () => {
     // more state
     const [age, setAge] = useState(20);
 
-    // useEfect is a function that takes a callback function as a parameter
+    // useEffect is a function that takes a callback function as a parameter
     // the callback function is called whenever the component renders or re-renders
     // i.e. whenever the data in the component changes and on the initial render
     // the second parameter is an array of variable we want to watch s.t. the callback is called only when those variables change
